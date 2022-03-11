@@ -1,0 +1,16 @@
+package com.hookTest;
+
+import io.cucumber.java.Before;
+
+public class HookTest2 {
+
+@Before(order = 2)
+public void beforeScenario() {
+	System.out.println("This method is for before Scenario");
+}
+@Before(order = 1)// prioritization
+public void initialisation() {
+	
+	System.out.println("Initialise program");
+}
+}

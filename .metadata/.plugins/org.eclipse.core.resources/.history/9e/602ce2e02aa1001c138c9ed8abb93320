@@ -1,0 +1,11 @@
+package com.abstraction.interfaceimpl;
+
+public class Lecturer implements Person{
+
+	@Override
+	public void display() {
+		System.out.println("Lecturer can teach inside college");
+		
+	}
+
+}

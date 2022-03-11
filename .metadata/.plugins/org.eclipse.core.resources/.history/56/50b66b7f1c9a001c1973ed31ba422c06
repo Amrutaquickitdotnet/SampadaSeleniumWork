@@ -1,0 +1,43 @@
+package com.selenium;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class Example_14_ReadDatafromExcel {
+	static WebDriver driver;
+	 static FileInputStream fs;
+	 static Properties prop;
+
+	public static void main(String[] args) {
+		
+		//System.out.println(System.getProperty("user.dir"));
+		String excelPath = System.getProperty("user.dir")+"//resources//TestData.xlsx";
+		FileInputStream fs = new FileInputStream(excelPath);
+	
+		
+	}
+	
+	
+		
+		
+	}
+
+	
+	
+
+	
+
+	
+

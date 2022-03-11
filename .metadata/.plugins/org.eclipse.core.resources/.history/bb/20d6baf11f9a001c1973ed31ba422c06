@@ -1,0 +1,56 @@
+package com.selenium;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Iterator;
+import java.util.Properties;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+
+public class Example_14_ReadDatafromExcel {
+	static WebDriver driver;
+	static FileInputStream fs;
+	static Properties prop;
+	static XSSFWorkbook wb;
+	static XSSFSheet sh;
+
+	public static void main(String[] args) throws Exception {
+
+		// System.out.println(System.getProperty("user.dir"));
+		String excelPath = System.getProperty("user.dir") + "//resources//TestData.xlsx";
+		
+			fs = new FileInputStream(excelPath);
+		
+		wb = new XSSFWorkbook();
+		sh = wb.getSheet("Sheet1");
+		System.out.println(sh.getLastRowNum());
+		Iterator<Row> itr = sh.iterator();
+		while (itr.hasNext()) {
+			Row row = itr.next(); // return single row
+			Iterator<Cell> columns = row.cellIterator();
+
+			while (columns.hasNext()) {
+				Cell cell = columns.next();
+				switch (cell.getCellType()) {
+				case STRING:
+					System.out.print(cell.getStringCellValue());
+					break;
+				case NUMERIC:
+					System.out.print(cell.getNumericCellValue());
+					break;
+				case FORMULA:
+					System.out.print(cell.getCellFormula());
+					break;
+				default:
+				}
+
+			}
+		}
+
+	}
+
+}

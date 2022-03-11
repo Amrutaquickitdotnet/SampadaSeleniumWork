@@ -1,0 +1,21 @@
+package stepDefination;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefination {
+	@Given("I have visited orangehrm url")
+	public void i_have_visited_orangehrm_url() {
+	   
+	}
+	@When("user will enter username and password")
+	public void user_will_enter_username_and_password() {
+	   
+	}
+	@Then("login successfully done")
+	public void login_successfully_done() {
+	    
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Example_004_SelectValueFromDropdown {
+	static WebDriver driver;
+
+	public static void main(String[] args) {
+		dropDownValue();
+	}
+
+	public static void dropDownValue() {
+		WebElement countryDropdown = driver.findElement(By.name("Country"));
+		Select select = new Select(countryDropdown);
+
+		select.selectByIndex(3);
+
+	}
+
+}

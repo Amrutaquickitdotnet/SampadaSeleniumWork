@@ -1,0 +1,5 @@
+package com.inheritancecncept;
+
+public class Nano extends Car {
+
+}

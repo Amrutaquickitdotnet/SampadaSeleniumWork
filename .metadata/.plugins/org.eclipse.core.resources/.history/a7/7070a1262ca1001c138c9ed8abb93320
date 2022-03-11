@@ -1,0 +1,9 @@
+package com.learning;
+
+import java.util.Scanner;
+
+public class Example_007_copyinganArray {
+
+	public static void main(String[] args) {
+		
+}

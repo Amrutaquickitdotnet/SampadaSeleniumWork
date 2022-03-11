@@ -1,0 +1,25 @@
+package com.selenium;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.formula.Formula;
+import org.openqa.selenium.WebDriver;
+
+public class Example_17_HowTohandleAlert {
+	static WebDriver driver;
+	static FileInputStream fs;
+	
+
+	public static void main(String[] args) throws Exception {
+readData();
+	}
+// get single row or single columns from Excel sheet
+	public static void handleAlert() throws Exception {
+		
+		
+	}
+

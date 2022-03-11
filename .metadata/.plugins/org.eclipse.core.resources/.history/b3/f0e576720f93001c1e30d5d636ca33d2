@@ -1,0 +1,15 @@
+package com.learning;
+
+public class Example_004_Array {
+
+	public static void main(String[] args) {
+		
+    int[] numbers = {1,2,12,34,56}	;
+    // fetch array 
+    System.out.println("1st index position "+ numbers[0]);
+		
+		
+	}
+	
+
+}

@@ -1,0 +1,11 @@
+package com.abstraction;
+
+public class Rectangle extends Shapes{
+
+	@Override
+	void draw() {
+		System.out.println("Drawing Rectangle");
+		
+	}
+
+}

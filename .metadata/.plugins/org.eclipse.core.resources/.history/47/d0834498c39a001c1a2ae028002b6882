@@ -1,0 +1,35 @@
+package com.selenium;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Iterator;
+import java.util.Properties;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+
+public class Example_16_ReadDataFromExcel_usingHSSF {
+	static WebDriver driver;
+	static FileInputStream fs;
+	
+
+	public static void main(String[] args) throws Exception {
+
+		readData();
+	}
+// get single row or single columns from Excel sheet
+	public static void readData() throws Exception {
+		// String excelPath = "G:\\SampadaSelenium\\OR\\TestData.xlsx";
+		String excelpath = System.getProperty("user.dir") + "//resources//Data.xls";
+		fs = new FileInputStream(excelpath);
+        HSSFWorkbook wb = new HSSFWorkbook();
+        wb.getSheet("G:\\SampadaSelenium\\Selenium_Programs\\resources\\Data.xls");
+        
+		
+	}
+}

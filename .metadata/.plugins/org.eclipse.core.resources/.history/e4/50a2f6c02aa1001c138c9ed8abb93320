@@ -1,0 +1,6 @@
+package com.abstraction.interfaceimpl;
+
+public interface PersonTest {
+
+	abstract void testgear();
+}

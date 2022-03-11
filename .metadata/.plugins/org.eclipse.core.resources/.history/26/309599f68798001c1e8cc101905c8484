@@ -1,0 +1,20 @@
+package stepDefination;
+
+public class StepDefination {
+	@Given("I have visited orangehrm url")
+	public void i_have_visited_orangehrm_url() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user will enter username and password")
+	public void user_will_enter_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("login successfully done")
+	public void login_successfully_done() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

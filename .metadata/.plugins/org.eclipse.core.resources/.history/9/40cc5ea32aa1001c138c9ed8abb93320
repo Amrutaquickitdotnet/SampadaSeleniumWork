@@ -1,0 +1,10 @@
+package com.abstraction.interfaceimpl;
+
+public class Student implements Person{
+
+	@Override
+	public void display() {
+		System.out.println("Students behaviour can be differnt");
+	}
+
+}

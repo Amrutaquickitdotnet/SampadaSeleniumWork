@@ -1,0 +1,7 @@
+package com.inheritancecncept;
+
+public class Maruti extends Car {
+
+	
+	
+}

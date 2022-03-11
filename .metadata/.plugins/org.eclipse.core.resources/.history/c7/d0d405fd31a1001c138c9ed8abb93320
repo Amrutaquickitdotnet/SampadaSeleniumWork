@@ -1,0 +1,18 @@
+package com.polymorphism;
+
+public class TestBank {
+
+	public static void main(String[] args) {
+		HDFC hb = new HDFC();
+		hb.getRateofInterest();
+		
+		
+		SBI s = new SBI();
+		hb.getRateofInterest();
+		
+		Axis ab = new Axis();
+		hb.getRateofInterest();
+		
+	}
+
+}

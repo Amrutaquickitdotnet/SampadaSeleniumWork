@@ -1,0 +1,23 @@
+package com.inheritancecncept;
+
+public class Car {
+	
+private String color;//Features
+private String maxSpeed;
+
+public void carinfo() {
+	System.out.println("Car Colour "+ color+ "Speed of Car"+ maxSpeed);
+	
+}
+
+public void setColor(String colour) {
+	this.color = colour;
+	
+}
+
+
+public void setmaxSpeed(String speed) {
+	this.maxSpeed = speed;
+	
+}
+}

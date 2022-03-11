@@ -1,0 +1,7 @@
+package com.abstraction;
+
+public abstract class Shapes {
+
+	
+	abstract void draw();
+}

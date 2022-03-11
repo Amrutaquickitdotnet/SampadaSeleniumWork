@@ -1,0 +1,11 @@
+package com.polymorphism;
+
+public class TestAddition {
+
+	public static void main(String[] args) {
+		Addition a = new Addition();
+		System.out.println("Addtion using 2 parameters"+a.sum(2, 5));
+		System.out.println("using 3 parameters"+ a.sum(1, 2, 3));
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.learning;
+
+public class Example_002_Variables_DataType {
+
+	public static void main(String[] args) {
+		// Declare variables 
+		//type variablename = value;
+		String name = "Sampada";
+		System.out.println(name);
+		
+		int myNum = 23;
+		System.out.println(myNum);
+		myNum= 25;
+		System.out.println(myNum);
+		
+		final int myNumber = 34;
+		
+		char myLetter = 'D';
+		System.out.println(myLetter);
+		
+		
+	}
+
+}

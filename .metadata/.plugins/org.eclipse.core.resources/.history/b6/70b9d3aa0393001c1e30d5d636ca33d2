@@ -1,0 +1,37 @@
+package com.learning;
+
+public class Example_002_Variables_DataType {
+
+	public static void main(String[] args) {
+		// Declare variables 
+		//type variablename = value;
+		String name = "Sampada";
+		System.out.println(name);
+		
+		int myNum = 23;
+		System.out.println(myNum);
+		myNum= 25;
+		System.out.println(myNum);
+		
+		final int myNumber = 34;
+		
+		char myLetter = 'D';
+		System.out.println(myLetter);
+		
+		char letter = 65;
+		System.out.println(letter);
+		
+		//length of character data type 
+		
+		boolean myBool = false;
+		if(myBool== true) {
+			System.out.println("I am in True");
+		}else 
+		{
+			System.out.println("I am in false");
+		}
+		
+		
+	}
+
+}

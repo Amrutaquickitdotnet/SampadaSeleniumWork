@@ -1,0 +1,36 @@
+package com.selenium;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Iterator;
+import java.util.Properties;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+
+public class Example_15_ReadDatafromExcel2 {
+	static WebDriver driver;
+	static FileInputStream fs;
+	static Properties prop;
+	static XSSFWorkbook wb;
+	static XSSFSheet sh;
+
+	public static void main(String[] args) throws Exception {
+
+		readData();
+	}
+
+	public static void readData() throws Exception {
+		// String excelPath = "G:\\SampadaSelenium\\OR\\TestData.xlsx";
+		String excelpath = System.getProperty("user.dir") + "//resources//TestData.xlsx";
+		fs = new FileInputStream(excelpath);
+
+		wb = new XSSFWorkbook(fs);
+		sh = wb.getSheet("Sheet1");
+
+	}
+}

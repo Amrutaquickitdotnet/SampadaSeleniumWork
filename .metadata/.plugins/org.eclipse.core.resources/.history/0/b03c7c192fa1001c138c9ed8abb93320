@@ -1,0 +1,9 @@
+package com.inheritancecncept;
+
+public class Maruti extends Car {
+
+	
+	public void marutiStartDemo() {
+		System.out.println("Maruti is outdated");
+	}
+}

@@ -1,0 +1,18 @@
+package com.learning;
+
+public class Example_002_Variables_DataType {
+
+	public static void main(String[] args) {
+		
+	 // byte 
+		
+		System.out.println("Size of byte"+" "+ Byte.SIZE);
+		System.out.println("minimum value of byte"+" "+  Byte.MIN_VALUE);
+		System.out.println("maximum  of byte"+" "+  Byte.MAX_VALUE);
+
+	
+		
+
+	}
+
+}
