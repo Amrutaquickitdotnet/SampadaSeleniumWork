@@ -12,6 +12,7 @@ public class Example_17_HowTohandleAlert {
 	public static void main(String[] args) throws Exception {
 		handleAlert();
 	}
+
 // get single row or single columns from Excel sheet
 	public static void handleAlert() throws Exception {
 		System.setProperty("webdriver.chrome.driver",
@@ -21,17 +22,15 @@ public class Example_17_HowTohandleAlert {
 		driver.manage().window().maximize();
 
 		driver.navigate().to("https://mail.rediff.com/cgi-bin/login.cgi");
-		
-		WebElement signInButton = driver.findElement(By.name("proceed"));
-		signInButton.click();
+
+		driver.findElement(By.name("proceed")).click();
 		Alert a = driver.switchTo().alert();
 		System.out.println(a.getText());
-		
-		// 2 methods Alert interface 
-		//1.Accept() 2. Dismiss()
-		//a.accept();
+
+		// 2 methods Alert interface
+		// 1.Accept() 2. Dismiss()
+		// a.accept();
 		a.dismiss();
 	}
-	
-}
 
+}
